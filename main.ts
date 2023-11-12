@@ -1,0 +1,10 @@
+basic.showString("6")
+basic.pause(2000)
+basic.forever(function () {
+    music.playTone(262, music.beat(BeatFraction.Whole))
+    music.playTone(294, music.beat(BeatFraction.Half))
+    music.playTone(330, music.beat(BeatFraction.Quarter))
+    music.rest(music.beat(BeatFraction.Double))
+    music.startMelody(music.builtInMelody(Melodies.PowerUp), MelodyOptions.Once)
+    music.rest(music.beat(BeatFraction.Whole))
+})
